@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     # 3rd party 
     'rest_framework',
-    'corsheaders',
+    'corsheaders', # for communicating with forntend
 
 
     #local
@@ -147,6 +147,8 @@ REST_FRAMEWORK = {
 }
 
 
+
+# to allow only the following port for accessing the api
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
     'http://localhost:8000',
